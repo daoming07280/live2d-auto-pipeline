@@ -1,0 +1,31 @@
+{
+  "_readme": "把占位符改成你本机绝对路径。不要提交真实 config（含个人路径/token）。",
+
+  "see_through_python": "<see-through-venv>/Scripts/python.exe",
+  "see_through_script": "<see-through>/app.py",
+
+  "model_search_roots": [
+    "<hf-cache>/hub"
+  ],
+
+  "psd_python": "<workflow>/.venv-psd/Scripts/python.exe",
+  "psd2live_exe": "<psd2live>/PSD2Live/PSD2Live.exe",
+
+  "psd_side_convention": "character",
+  "default_preset": "standard",
+
+  "hf_home": "<hf-cache>",
+  "hf_hub_offline": "1",
+
+  "recommended_see_through": {
+    "resolution": 768,
+    "steps": 30,
+    "tblr": true,
+    "group_offload": true,
+    "marigold_group_offload": false
+  },
+  "recommended_psd2live": {
+    "mesh_spacing": 48,
+    "atlas": 4096
+  }
+}

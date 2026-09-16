@@ -1,0 +1,27 @@
+# secrets & local
+config.json
+*.token
+.env
+*.key
+
+# models / caches (do not publish)
+hf-cache/
+torch-cache/
+models--*/
+node_modules/
+.venv*/
+__pycache__/
+*.pyc
+
+# large intermediates
+jobs/
+**/02_layers/
+**/reorder_raw/
+**/fix_raw/
+*.cmo3
+*.psd
+!docs/**/*.psd
+
+# OS
+Thumbs.db
+.DS_Store
