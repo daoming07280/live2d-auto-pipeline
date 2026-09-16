@@ -35,14 +35,25 @@ psd2live:    --mesh-spacing 48 --atlas 4096
 
 ## 示例结果（768/30）
 
-输入：半身、**张嘴**、背景较干净的立绘（`examples/source_open_mouth.png`）。
+输入：半身、**张嘴**、背景较干净的立绘。
 
-| 状态 | 文件 |
+### 源图与运行结果
+
+| 源图（张嘴原画） | 张嘴状态 | 闭嘴状态（压合） |
+|------------------|----------|------------------|
+| ![source](examples/source_open_mouth.png) | ![open](examples/result_open_mouth.png) | ![closed](examples/result_closed_mouth.png) |
+
+- 脸部预览：`results/test03_v3_face_preview.png`
+- 可加载模型包：`results/test03_768_v3/`
+
+### 常见问题截图（自动链路实测）
+
+| 问题 | 截图 |
 |------|------|
-| 张嘴 | `examples/result_open_mouth.png` |
-| 闭嘴（压合观感） | `examples/result_closed_mouth.png` |
-| 脸部预览 | `results/test03_v3_face_preview.png` |
-| 可加载模型包 | `results/test03_768_v3/` |
+| 右眼全白（眼白盖住瞳孔） | ![blank eye](examples/issue_blank_eye_v1.png) |
+| 嘴层无唇线 | ![no lips](examples/issue_open_mouth_no_lips.png) |
+| 脸颊误检耳朵 + 闭嘴怪异 | ![cheek ear](examples/issue_cheek_ear_closed_mouth.png) |
+| test02 眨眼空眼 | ![test02](examples/issue_test02_blank_eye.png) |
 
 ### 结论摘要
 
