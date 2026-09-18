@@ -1,0 +1,371 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 680" width="420" height="680" role="img" aria-label="银发青瞳白青汉服立绘">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f4f2"/>
+      <stop offset="100%" stop-color="#efeceb"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#e8eef6"/>
+      <stop offset="75%" stop-color="#dfe6f0"/>
+      <stop offset="100%" stop-color="#d4dde8"/>
+    </linearGradient>
+    <linearGradient id="hairTeal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9fd9d4"/>
+      <stop offset="100%" stop-color="#6bb8b4"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8e0d6"/>
+      <stop offset="100%" stop-color="#f0cfc4"/>
+    </linearGradient>
+    <linearGradient id="dressWhite" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f7f4f0"/>
+      <stop offset="100%" stop-color="#f0ebe6"/>
+    </linearGradient>
+    <linearGradient id="dressTeal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7fd4cc"/>
+      <stop offset="50%" stop-color="#4ec4b8"/>
+      <stop offset="100%" stop-color="#3aa89c"/>
+    </linearGradient>
+    <linearGradient id="sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5fd0c4"/>
+      <stop offset="100%" stop-color="#2f9e94"/>
+    </linearGradient>
+    <linearGradient id="iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9ff0e0"/>
+      <stop offset="45%" stop-color="#3ec9b0"/>
+      <stop offset="100%" stop-color="#1a9a8a"/>
+    </linearGradient>
+    <linearGradient id="skirtPink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8e8ea"/>
+      <stop offset="100%" stop-color="#f0c8ce"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f6f4"/>
+      <stop offset="100%" stop-color="#b8e8e2"/>
+    </linearGradient>
+    <radialGradient id="blush" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#f5a0a8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f5a0a8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="420" height="680" fill="url(#bg)"/>
+
+  <!-- floating ribbons left -->
+  <path d="M30 280 Q80 340 40 420 Q100 480 70 560 Q130 600 95 650"
+        fill="none" stroke="url(#ribbon)" stroke-width="10" opacity="0.7" stroke-linecap="round"/>
+  <path d="M50 300 Q100 360 55 430 Q110 500 75 570"
+        fill="none" stroke="#d8f2ee" stroke-width="6" opacity="0.55" stroke-linecap="round"/>
+
+  <!-- floating ribbons right -->
+  <path d="M390 270 Q340 330 385 400 Q330 470 375 540 Q320 590 350 650"
+        fill="none" stroke="url(#ribbon)" stroke-width="10" opacity="0.7" stroke-linecap="round"/>
+  <path d="M400 300 Q350 360 395 430 Q340 500 375 560"
+        fill="none" stroke="#d8f2ee" stroke-width="6" opacity="0.55" stroke-linecap="round"/>
+
+  <!-- BACK HAIR -->
+  <path d="M145 145
+           Q130 200 125 280
+           Q118 380 135 470
+           Q145 520 160 500
+           Q170 450 175 380
+           L175 320
+           Q200 340 210 320
+           L210 380
+           Q215 450 230 500
+           Q245 520 255 470
+           Q272 380 265 280
+           Q260 200 245 145
+           Q220 160 195 155
+           Q170 160 145 145 Z"
+        fill="url(#hair)"/>
+  <!-- back hair teal streak left -->
+  <path d="M140 200 Q128 300 140 400 Q150 470 165 460 Q155 380 158 300 Q160 240 155 200 Z"
+        fill="url(#hairTeal)" opacity="0.75"/>
+  <!-- back hair teal streak right -->
+  <path d="M250 200 Q262 300 250 400 Q240 470 228 460 Q238 380 235 300 Q232 240 240 200 Z"
+        fill="url(#hairTeal)" opacity="0.55"/>
+
+  <!-- hairpin left (crescent + chain) -->
+  <g>
+    <path d="M118 68 L175 95" stroke="#c9b88a" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M118 68 Q105 62 108 75 Q112 86 122 82" fill="none" stroke="#5ec4b8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M125 72 Q118 68 120 76" fill="none" stroke="#e8c85a" stroke-width="2"/>
+    <circle cx="155" cy="78" r="3.5" fill="#8ad4cc"/>
+    <circle cx="168" cy="84" r="3" fill="#a8e0d8"/>
+    <path d="M140 90 Q145 130 155 170" fill="none" stroke="#9ad0e8" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.7"/>
+    <circle cx="145" cy="115" r="4" fill="#7ec8e0" stroke="#fff" stroke-width="1"/>
+    <circle cx="152" cy="145" r="3.5" fill="#7ec8e0" stroke="#fff" stroke-width="1"/>
+    <circle cx="158" cy="175" r="3.5" fill="#7ec8e0" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- hairpin right (flower cluster) -->
+  <g>
+    <path d="M265 95 L340 155" stroke="#c9b88a" stroke-width="2.5" stroke-linecap="round"/>
+    <g transform="translate(280,115)">
+      <ellipse cx="-8" cy="0" rx="7" ry="5" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.8"/>
+      <ellipse cx="8" cy="0" rx="7" ry="5" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.8"/>
+      <ellipse cx="0" cy="-8" rx="5" ry="7" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.8"/>
+      <ellipse cx="0" cy="8" rx="5" ry="7" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="4" fill="#5ec4b8"/>
+    </g>
+    <g transform="translate(310,140)">
+      <ellipse cx="-7" cy="0" rx="6" ry="4.5" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.8"/>
+      <ellipse cx="7" cy="0" rx="6" ry="4.5" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.8"/>
+      <ellipse cx="0" cy="-7" rx="4.5" ry="6" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.8"/>
+      <ellipse cx="0" cy="7" rx="4.5" ry="6" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="3.5" fill="#5ec4b8"/>
+    </g>
+    <circle cx="335" cy="158" r="5" fill="#f0a0c0" stroke="#fff" stroke-width="1"/>
+    <path d="M270 110 Q300 100 330 130" fill="none" stroke="#a8e0d8" stroke-width="1" stroke-dasharray="3 5" opacity="0.6"/>
+  </g>
+
+  <!-- cat-ear hair ornaments -->
+  <path d="M168 78 L175 40 L195 72 Z" fill="url(#hairTeal)" stroke="#fff" stroke-width="1.5"/>
+  <path d="M175 72 L182 48 L192 70 Z" fill="#c8f0ec" opacity="0.7"/>
+  <path d="M205 72 L228 38 L238 85 Z" fill="url(#hairTeal)" stroke="#fff" stroke-width="1.5"/>
+  <path d="M212 74 L226 52 L232 78 Z" fill="#c8f0ec" opacity="0.7"/>
+
+  <!-- FRONT HAIR / bangs -->
+  <path d="M155 105
+           Q150 70 195 58
+           Q245 50 270 85
+           Q285 115 278 155
+           Q270 175 255 170
+           Q260 145 250 130
+           Q235 150 220 145
+           Q215 165 200 168
+           Q195 155 188 148
+           Q175 165 165 160
+           Q158 140 155 105 Z"
+        fill="url(#hair)"/>
+  <!-- bangs teal highlight -->
+  <path d="M200 65 Q210 90 205 130 Q200 155 195 165 Q188 140 192 110 Q195 80 200 65 Z"
+        fill="url(#hairTeal)" opacity="0.65"/>
+  <!-- side hair left -->
+  <path d="M155 110 Q140 150 138 200 Q135 250 150 280 Q160 250 158 210 Q160 160 168 125 Z"
+        fill="url(#hair)"/>
+  <path d="M150 130 Q142 180 148 230 Q152 255 155 245 Q150 190 155 145 Z"
+        fill="url(#hairTeal)" opacity="0.5"/>
+  <!-- side hair right -->
+  <path d="M270 115 Q285 155 288 210 Q290 260 275 295 Q265 260 268 220 Q265 165 255 130 Z"
+        fill="url(#hair)"/>
+  <!-- pink hair tips -->
+  <path d="M138 250 Q145 275 152 285 Q148 265 150 250 Z" fill="#f0b8c0" opacity="0.7"/>
+  <path d="M278 265 Q272 290 265 300 Q270 280 272 265 Z" fill="#f0b8c0" opacity="0.65"/>
+
+  <!-- hair flower accessory on bangs -->
+  <g transform="translate(255,95)">
+    <ellipse cx="-6" cy="0" rx="5" ry="3.5" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.7"/>
+    <ellipse cx="6" cy="0" rx="5" ry="3.5" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.7"/>
+    <ellipse cx="0" cy="-6" rx="3.5" ry="5" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.7"/>
+    <ellipse cx="0" cy="6" rx="3.5" ry="5" fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.7"/>
+    <circle r="3" fill="#5ec4b8"/>
+  </g>
+  <circle cx="268" cy="105" r="3.5" fill="#f0a0c0"/>
+  <circle cx="275" cy="88" r="2.5" fill="#7ec8e0"/>
+
+  <!-- FACE -->
+  <path d="M168 100
+           Q165 145 175 175
+           Q185 205 210 218
+           Q235 205 245 175
+           Q255 145 252 100
+           Q240 88 210 86
+           Q180 88 168 100 Z"
+        fill="url(#skin)" filter="url(#soft)"/>
+
+  <!-- blush -->
+  <ellipse cx="185" cy="168" rx="14" ry="8" fill="url(#blush)"/>
+  <ellipse cx="235" cy="168" rx="14" ry="8" fill="url(#blush)"/>
+
+  <!-- nose -->
+  <path d="M208 168 Q210 178 212 182" fill="none" stroke="#e8b8a8" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- mouth -->
+  <path d="M200 198 Q210 204 222 197" fill="none" stroke="#d88890" stroke-width="2" stroke-linecap="round"/>
+  <path d="M202 198 Q210 201 220 197" fill="#e89098" opacity="0.5"/>
+
+  <!-- EYES -->
+  <!-- left eye (character's right) -->
+  <g>
+    <path d="M178 145 Q190 138 202 145 Q202 168 190 172 Q178 168 178 145 Z" fill="#fff"/>
+    <ellipse cx="191" cy="157" rx="9" ry="11" fill="url(#iris)"/>
+    <circle cx="191" cy="157" r="4" fill="#0a4038"/>
+    <circle cx="187" cy="152" r="2.5" fill="#fff" opacity="0.9"/>
+    <circle cx="195" cy="162" r="1.5" fill="#c8fff0" opacity="0.7"/>
+    <path d="M176 145 Q190 135 204 145" fill="none" stroke="#5a4048" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M176 145 L170 140" stroke="#5a4048" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M204 145 L212 142" stroke="#5a4048" stroke-width="2" stroke-linecap="round"/>
+    <path d="M180 148 Q190 144 200 148" fill="none" stroke="#c8a0a8" stroke-width="1"/>
+  </g>
+  <!-- right eye -->
+  <g>
+    <path d="M218 145 Q230 138 242 145 Q242 168 230 172 Q218 168 218 145 Z" fill="#fff"/>
+    <ellipse cx="231" cy="157" rx="9" ry="11" fill="url(#iris)"/>
+    <circle cx="231" cy="157" r="4" fill="#0a4038"/>
+    <circle cx="227" cy="152" r="2.5" fill="#fff" opacity="0.9"/>
+    <circle cx="235" cy="162" r="1.5" fill="#c8fff0" opacity="0.7"/>
+    <path d="M216 145 Q230 135 244 145" fill="none" stroke="#5a4048" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M244 145 L252 142" stroke="#5a4048" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M216 145 L208 142" stroke="#5a4048" stroke-width="2" stroke-linecap="round"/>
+    <path d="M220 148 Q230 144 240 148" fill="none" stroke="#c8a0a8" stroke-width="1"/>
+  </g>
+
+  <!-- eyebrows -->
+  <path d="M178 132 Q190 126 202 132" fill="none" stroke="#a8b0c0" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M218 132 Q230 126 242 132" fill="none" stroke="#a8b0c0" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- NECK -->
+  <path d="M195 215 L200 250 L225 250 L228 215 Q210 230 195 215 Z" fill="url(#skin)"/>
+  <!-- collar -->
+  <path d="M195 235 Q210 250 230 235 L232 250 Q210 268 193 250 Z" fill="#f0eef0" stroke="#d0c8d0" stroke-width="1"/>
+  <path d="M210 250 L210 268" stroke="#d0c8d0" stroke-width="1"/>
+
+  <!-- BODY / dress base -->
+  <!-- shoulders / chest white bodice -->
+  <path d="M175 248
+           Q185 240 210 245
+           Q240 240 255 255
+           Q275 275 285 330
+           Q290 400 285 460
+           L135 460
+           Q130 400 135 330
+           Q145 275 175 248 Z"
+        fill="url(#dressWhite)"/>
+  <!-- chest pink shading -->
+  <path d="M195 270 Q210 300 210 340 Q195 350 185 320 Q185 285 195 270 Z" fill="#f8dce0" opacity="0.55"/>
+  <path d="M225 270 Q225 300 215 340 Q230 350 240 320 Q240 285 225 270 Z" fill="#f8dce0" opacity="0.55"/>
+
+  <!-- halter straps -->
+  <path d="M200 245 Q205 230 210 245" fill="none" stroke="#e8e4e0" stroke-width="5"/>
+  <path d="M220 245 Q225 230 230 248" fill="none" stroke="#e8e4e0" stroke-width="5"/>
+
+  <!-- necklaces -->
+  <path d="M195 255 Q210 275 230 255" fill="none" stroke="#2a2830" stroke-width="2.2"/>
+  <path d="M192 262 Q210 290 235 262" fill="none" stroke="#3ec9b0" stroke-width="2.8"/>
+  <circle cx="195" cy="264" r="2" fill="#e8c85a"/>
+  <circle cx="210" cy="278" r="2.5" fill="#3ec9b0"/>
+  <circle cx="228" cy="264" r="2" fill="#e8c85a"/>
+  <!-- gem pendant chain -->
+  <path d="M210 278 L210 305" stroke="#c9b88a" stroke-width="1.5"/>
+  <ellipse cx="210" cy="312" rx="10" ry="8" fill="#f0a0c0" stroke="#e8c85a" stroke-width="1.5"/>
+  <circle cx="210" cy="312" r="4" fill="#f8d0e0"/>
+  <path d="M210 322 L210 340" stroke="#c9b88a" stroke-width="1.5"/>
+  <circle cx="210" cy="348" r="14" fill="none" stroke="#3ec9b0" stroke-width="7"/>
+  <circle cx="210" cy="348" r="6" fill="url(#dressWhite)"/>
+  <circle cx="210" cy="372" r="5" fill="#3ec9b0"/>
+
+  <!-- teal outer robe / sleeves LEFT -->
+  <path d="M175 250
+           Q150 270 130 320
+           Q110 380 105 450
+           Q100 520 120 545
+           Q150 530 155 480
+           Q160 420 175 370
+           Q185 330 185 290 Z"
+        fill="url(#sleeve)"/>
+  <!-- sleeve cuff scallop left -->
+  <path d="M105 530 Q115 555 140 545 Q155 535 158 510"
+        fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M112 540 Q130 555 150 535" fill="none" stroke="#e8faf7" stroke-width="3"/>
+
+  <!-- left hand -->
+  <path d="M125 545 Q130 575 145 595 Q155 600 160 590 Q165 575 158 555 Q148 545 135 548 Z" fill="url(#skin)"/>
+  <path d="M145 595 Q148 610 152 612" stroke="#e8c0b0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M150 592 Q156 608 162 608" stroke="#e8c0b0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M155 588 Q164 600 170 598" stroke="#e8c0b0" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- teal outer robe / sleeves RIGHT -->
+  <path d="M255 255
+           Q285 275 305 325
+           Q325 385 330 455
+           Q335 525 315 550
+           Q285 535 280 485
+           Q275 425 258 375
+           Q248 335 248 295 Z"
+        fill="url(#sleeve)"/>
+  <!-- sleeve cuff scallop right -->
+  <path d="M330 535 Q320 560 295 550 Q280 540 278 515"
+        fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M322 545 Q305 558 285 538" fill="none" stroke="#e8faf7" stroke-width="3"/>
+
+  <!-- right hand -->
+  <path d="M300 548 Q295 578 280 598 Q270 603 265 593 Q260 578 268 558 Q278 548 290 550 Z" fill="url(#skin)"/>
+  <path d="M278 598 Q275 613 271 615" stroke="#e8c0b0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M273 595 Q267 611 261 611" stroke="#e8c0b0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M268 591 Q259 603 253 601" stroke="#e8c0b0" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- flower embroidery on sleeves -->
+  <g fill="#e8faf7" stroke="#7ec8c0" stroke-width="0.6" opacity="0.9">
+    <g transform="translate(145,400)"><circle r="4"/><circle cx="-5" r="3"/><circle cx="5" r="3"/><circle cy="-5" r="3"/><circle cy="5" r="3"/></g>
+    <g transform="translate(160,460)"><circle r="3.5"/><circle cx="-4" r="2.5"/><circle cx="4" r="2.5"/><circle cy="-4" r="2.5"/><circle cy="4" r="2.5"/></g>
+    <g transform="translate(290,410)"><circle r="4"/><circle cx="-5" r="3"/><circle cx="5" r="3"/><circle cy="-5" r="3"/><circle cy="5" r="3"/></g>
+    <g transform="translate(275,470)"><circle r="3.5"/><circle cx="-4" r="2.5"/><circle cx="4" r="2.5"/><circle cy="-4" r="2.5"/><circle cy="4" r="2.5"/></g>
+    <g transform="translate(155,350)"><circle r="3"/><circle cx="-4" r="2"/><circle cx="4" r="2"/></g>
+    <g transform="translate(300,360)"><circle r="3"/><circle cx="-4" r="2"/><circle cx="4" r="2"/></g>
+  </g>
+  <!-- leaf accents on sleeves -->
+  <path d="M130 430 Q145 425 150 445 Q135 450 130 430 Z" fill="#a8e8c8" opacity="0.7"/>
+  <path d="M310 440 Q295 435 290 455 Q305 460 310 440 Z" fill="#a8e8c8" opacity="0.7"/>
+
+  <!-- waist sash -->
+  <path d="M145 395 Q210 415 285 395 L285 430 Q210 450 145 430 Z" fill="url(#dressTeal)"/>
+  <path d="M150 405 Q210 425 280 405" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+  <!-- waist chain -->
+  <path d="M175 430 Q210 455 260 435" fill="none" stroke="#2a2830" stroke-width="1.8"/>
+  <circle cx="190" cy="442" r="3" fill="#f0a0c0"/>
+  <circle cx="210" cy="450" r="3.5" fill="#e8c85a"/>
+  <circle cx="230" cy="448" r="3" fill="#f0a0c0"/>
+  <path d="M210 455 Q215 490 218 530" fill="none" stroke="#c9b88a" stroke-width="1.5"/>
+  <ellipse cx="218" cy="545" rx="8" ry="6" fill="#3ec9b0" opacity="0.85"/>
+  <circle cx="218" cy="570" r="5" fill="#3ec9b0"/>
+  <circle cx="218" cy="590" r="5" fill="#3ec9b0"/>
+  <circle cx="218" cy="610" r="5" fill="#3ec9b0"/>
+
+  <!-- skirt layers -->
+  <!-- outer white/teal skirt -->
+  <path d="M150 430
+           Q160 480 155 540
+           Q150 580 175 595
+           Q210 605 250 590
+           Q270 575 265 530
+           Q260 480 270 430
+           Q210 455 150 430 Z"
+        fill="url(#dressWhite)"/>
+  <!-- teal side wrap skirt -->
+  <path d="M155 435 Q175 470 200 475 Q185 520 175 560 Q165 540 155 490 Z"
+        fill="url(#dressTeal)" opacity="0.9"/>
+  <path d="M265 435 Q245 470 220 475 Q235 520 245 560 Q255 540 265 490 Z"
+        fill="url(#dressTeal)" opacity="0.75"/>
+  <!-- pink underlayer -->
+  <path d="M165 560 Q180 610 200 640 Q210 655 220 640 Q245 610 255 560 Q210 575 165 560 Z"
+        fill="url(#skirtPink)"/>
+  <!-- white front panel -->
+  <path d="M185 450 Q210 470 240 455 L245 530 Q210 550 180 530 Z" fill="url(#dressWhite)"/>
+  <path d="M200 470 Q210 500 215 530" fill="none" stroke="#e0e8f0" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- LEGS -->
+  <path d="M190 580 Q195 620 200 650 Q205 670 215 672 Q225 668 222 645 Q220 610 218 585 Z" fill="url(#skin)"/>
+  <path d="M230 580 Q235 620 240 650 Q242 670 232 673 Q222 670 225 645 Q228 610 230 585 Z" fill="url(#skin)"/>
+  <!-- shoes -->
+  <path d="M198 668 Q215 675 230 670 L232 680 L195 680 Z" fill="#e8e4e0" stroke="#c8c0c0" stroke-width="1"/>
+  <path d="M228 670 Q242 676 250 672 L252 680 L226 680 Z" fill="#e8e4e0" stroke="#c8c0c0" stroke-width="1"/>
+  <circle cx="214" cy="676" r="3" fill="#3ec9b0"/>
+  <circle cx="240" cy="676" r="3" fill="#3ec9b0"/>
+
+  <!-- white flowing ribbon behind body -->
+  <path d="M130 300 Q90 350 100 420 Q80 480 110 520 Q130 500 125 450 Q140 400 155 340"
+        fill="none" stroke="#f0f0f4" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+  <path d="M290 310 Q330 360 320 430 Q340 490 310 530 Q290 510 295 460 Q280 410 265 350"
+        fill="none" stroke="#f0f0f4" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="210" cy="678" rx="70" ry="8" fill="#000" opacity="0.06"/>
+</svg>
