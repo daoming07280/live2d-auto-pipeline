@@ -31,6 +31,18 @@ psd2live:    --mesh-spacing 48 --atlas 4096
 
 关键补丁：UNet 加载需 `low_cpu_mem_usage=True`，否则约 16GB 内存下易出现 ACCESS_VIOLATION。
 
+### 端到端总览
+
+```mermaid
+flowchart LR
+  IN[立绘 PNG/JPG] --> SD[See-through<br/>语义拆层]
+  SD --> PSD[分层 PSD]
+  PSD --> FIX[改名/预检/拆睫毛<br/>层序/耳朵/嘴修复]
+  FIX --> RIG[psd2live<br/>自动绑骨]
+  RIG --> OUT[moc3 + physics<br/>+ motion + cmo3]
+  OUT --> VTS[VTube Studio /<br/>Cubism 精修]
+```
+
 ---
 
 ## 示例结果（768/30）
@@ -77,7 +89,29 @@ psd2live:    --mesh-spacing 48 --atlas 4096
 
 ---
 
-## 推荐流水线
+## 实际工作流（流程图）
+
+```mermaid
+flowchart TB
+  A[合格原画<br/>半身·张嘴·背景干净] --> B[裁半身/上半身<br/>可选]
+  B --> C[See-through LayerDiff<br/>768 / 30 · group_offload ON]
+  C --> D[Marigold 深度<br/>单独进程 · group_offload OFF]
+  D --> E[组装分层 PSD<br/>further_extr + tblr]
+  E --> F[侧别改名<br/>psd_fix_layers]
+  F --> G[预检<br/>psd_precheck]
+  G --> H{是否阻断?}
+  H -->|嘴/睫毛/正立不合格| A
+  H -->|通过| I[拆下睫毛<br/>psd_split_lash]
+  I --> J[层序重排<br/>eyewhite → irides → lash<br/>back hair 置底]
+  J --> K[人工/脚本修图<br/>删脸颊误检耳朵<br/>原图重采嘴部]
+  K --> L[psd2live<br/>mesh 48 / atlas 4096]
+  L --> M[结构检查<br/>vts_check]
+  M --> N[导入 VTube Studio<br/>moc3 全套]
+  N --> O[眼嘴差分不足?]
+  O -->|自然闭嘴/复杂表情| P[手动差分 mouth_close<br/>或 Cubism 精修 .cmo3]
+  P --> N
+  O -->|可用| Q[完成]
+```
 
 ```text
 合格原画
